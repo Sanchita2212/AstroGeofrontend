@@ -10,7 +10,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    const apiKey = 'GCDP85-NY7AX2-8RNSQA-5PLY'
+    const apiKey = 'api key'
     const url = `https://api.n2yo.com/rest/v1/satellite/visualpasses/${satId}/${lat}/${lng}/${alt}/${days}/${minElevation}?apiKey=${apiKey}`
     const response = await fetch(url)
     const data = await response.json()
