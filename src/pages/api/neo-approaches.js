@@ -1,7 +1,7 @@
 export default async function handler(req, res) {
   const { days = '30', distanceAU = '0.2', minDiameter = '100' } = req.query
 
-  const apiKey = 'HsQYLR8zIorhzsBE73pLYOs5Vx3PbwfmJrW9KFSm'
+  const apiKey = 'your api key'
   const startDate = new Date()
   const endDate = new Date(startDate)
   endDate.setDate(endDate.getDate() + Number(days))
